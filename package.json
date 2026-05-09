@@ -1,0 +1,36 @@
+{
+  "name": "task-manager-jest",
+  "version": "1.0.0",
+  "description": "Task Manager App with full Jest testing suite",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:unit": "jest tests/unit --coverage",
+    "test:async": "jest tests/async --coverage",
+    "test:mock": "jest tests/mock --coverage",
+    "test:integration": "jest tests/integration --coverage",
+    "test:api": "jest tests/api --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "html"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 70,
+        "functions": 70,
+        "branches": 70,
+        "statements": 70
+      }
+    }
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
