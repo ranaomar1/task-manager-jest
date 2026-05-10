@@ -84,7 +84,7 @@ describe('POST /todos - createTodo()', () => {
     const createdTodo = { ...newTodo, id: 201 };
     mockFetch.mockReturnValueOnce(mockResponse(createdTodo, 201));
 
-    const result = await createTodo(newTodo);  //await
+    const result = await createTodo(newTodo);
 
     expect(mockFetch).toHaveBeenCalledWith(
       `${BASE_URL}/todos`,
@@ -95,7 +95,7 @@ describe('POST /todos - createTodo()', () => {
       })
     );
     expect(result.id).toBe(201);
-    expect(result.title).toBe('New Task');
+    expect(result.title).toBe('New Task'); //new task
   });
 
   test('sends correct Content-Type header', async () => {
@@ -112,7 +112,7 @@ describe('POST /todos - createTodo()', () => {
   });
 });
 
-// ─── PUT - updateTodo ────────────────────────────────────────
+// ─── PUT - updateTodo ───────────────────────────────────────────────
 describe('PUT /todos/:id - updateTodo()', () => {
   test('updates a todo and returns updated data', async () => {
     const updates = { title: 'Updated Title', completed: true };
