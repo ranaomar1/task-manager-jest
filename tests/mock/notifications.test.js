@@ -40,7 +40,7 @@ describe('jest.fn() - manual mock functions', () => {
   test('mock async function resolves correctly', async () => {
     const mockAsync = jest.fn().mockResolvedValue({ status: 'ok' });
     const result = await mockAsync();
-    expect(result).toEqual({ status: 'ok' }); //inliuabvuip;ha
+    expect(result).toEqual({ status: 'ok' });
   });
 
   test('mock async function can reject', async () => {
