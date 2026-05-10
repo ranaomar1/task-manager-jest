@@ -84,7 +84,7 @@ describe('POST /todos - createTodo()', () => {
     const createdTodo = { ...newTodo, id: 201 };
     mockFetch.mockReturnValueOnce(mockResponse(createdTodo, 201));
 
-    const result = await createTodo(newTodo);
+    const result = await createTodo(newTodo);  //await
 
     expect(mockFetch).toHaveBeenCalledWith(
       `${BASE_URL}/todos`,
