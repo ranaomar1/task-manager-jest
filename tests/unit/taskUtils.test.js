@@ -204,7 +204,7 @@ describe('completionPercentage()', () => {
   });
 
   test('returns 0 for empty array', () => {
-    expect(completionPercentage([])).toBe(0);
+    expect(completionPercentage([])).toBe(0); //to be
   });
 
   test('returns 0 for non-array input', () => {
