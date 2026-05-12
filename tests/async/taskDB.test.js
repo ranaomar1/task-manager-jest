@@ -17,7 +17,7 @@ beforeEach(() => {
   resetDB();
 });
 
-// ─── saveTask ────────────────────────────────────────────────
+// ─── saveTask ─────────────────────────────────────
 describe('saveTask() - async', () => {
   test('saves a task and returns it with an ID', async () => {
     const task = await saveTask({ title: 'Learn Jest', priority: 'high' });
@@ -25,7 +25,7 @@ describe('saveTask() - async', () => {
     expect(task.title).toBe('Learn Jest');
     expect(task.priority).toBe('high');
     expect(task.completed).toBe(false);
-    expect(task).toHaveProperty('createdAt');
+    expect(task).toHaveProperty('createdAt'); //jknu;'jiv
   });
 
   test('defaults completed to false', async () => {
