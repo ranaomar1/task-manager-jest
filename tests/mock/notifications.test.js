@@ -39,8 +39,8 @@ describe('jest.fn() - manual mock functions', () => {
 
   test('mock async function resolves correctly', async () => {
     const mockAsync = jest.fn().mockResolvedValue({ status: 'ok' });
-    const result = await mockAsync();           //565879   yugkll
-    expect(result).toEqual({ status: 'ok' }); //1234567
+    const result = await mockAsync();
+    expect(result).toEqual({ status: 'ok' });
   });
 
   test('mock async function can reject', async () => {
