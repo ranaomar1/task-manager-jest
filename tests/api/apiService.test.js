@@ -30,7 +30,7 @@ beforeEach(() => {
   mockFetch.mockClear();
 });
 
-// ─── GET - fetchTodos ─────────────────────────────────────────
+// ─── GET - fetchTodos ───────────────────────────────
 describe('GET /todos - fetchTodos()', () => {
   test('fetches all todos successfully', async () => {
     const mockData = [
@@ -58,7 +58,7 @@ describe('GET /todos - fetchTodos()', () => {
   });
 });
 
-// ─── GET - fetchTodoById ──────────────────────────────────────
+// ─── GET - fetchTodoById ───────────────────────
 describe('GET /todos/:id - fetchTodoById()', () => {
   test('fetches a single todo by ID', async () => {
     const mockTodo = { id: 5, title: 'Specific Task', completed: false };
@@ -77,7 +77,7 @@ describe('GET /todos/:id - fetchTodoById()', () => {
   });
 });
 
-// ─── POST - createTodo ───────────────────────────────────────
+// ─── POST - createTodo ─────────────────────────
 describe('POST /todos - createTodo()', () => {
   test('creates a new todo and returns it with ID', async () => {
     const newTodo = { title: 'New Task', completed: false, userId: 1 };
@@ -112,7 +112,7 @@ describe('POST /todos - createTodo()', () => {
   });
 });
 
-// ─── PUT - updateTodo ───────────────────────────────────────────────
+// ─── PUT - updateTodo ───────────────────────────
 describe('PUT /todos/:id - updateTodo()', () => {
   test('updates a todo and returns updated data', async () => {
     const updates = { title: 'Updated Title', completed: true };

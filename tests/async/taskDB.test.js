@@ -1,7 +1,7 @@
 // ============================================================
 // tests/async/taskDB.test.js
 // Async Testing - Tests for async database operations
-// ============================================================
+// ============================================
 
 const {
   saveTask,
@@ -93,7 +93,7 @@ describe('getTaskById() - async', () => {
   });
 });
 
-// ─── updateTask ───────────────────────────────────────────────
+// ─── updateTask ─────────────────────────────────────
 describe('updateTask() - async', () => {
   test('updates a task successfully', async () => {
     const task = await saveTask({ title: 'Old title' });
@@ -114,7 +114,7 @@ describe('updateTask() - async', () => {
   });
 });
 
-// ─── deleteTask ───────────────────────────────────────────────
+// ─── deleteTask ────────────────────────────────────────
 describe('deleteTask() - async', () => {
   test('deletes a task and returns true', async () => {
     const task = await saveTask({ title: 'Delete me' });
