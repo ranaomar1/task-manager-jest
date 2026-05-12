@@ -25,7 +25,7 @@ describe('saveTask() - async', () => {
     expect(task.title).toBe('Learn Jest');
     expect(task.priority).toBe('high');
     expect(task.completed).toBe(false);
-    expect(task).toHaveProperty('createdAt'); //jknu;'jiv
+    expect(task).toHaveProperty('createdAt');
   });
 
   test('defaults completed to false', async () => {
