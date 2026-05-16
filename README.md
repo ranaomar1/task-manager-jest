@@ -2,6 +2,9 @@
 
 A complete JavaScript Task Manager application with a comprehensive Jest test suite.
 
+![Test Image](assets/images/TaskManagment.png)
+
+
 ## Project Structure
 
 ```
